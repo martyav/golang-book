@@ -19,7 +19,7 @@ func main() {
 	fmt.Println("Go has two different kinds of floats, but they aren't called shorts and longs or doubles.", onePointOh, "is a float32, and", doubleOh, "is a float64.")
 
 	/*
-		We can display longer string simply by separating them with commas. We don't
+		We can print longer text simply by separating values with commas. We don't
 		need to add spaces within the text, because spaces will be added between
 		each comma-separated value.
 	*/
@@ -39,4 +39,14 @@ func main() {
 	fmt.Println("...but false or true is", false || true)
 	fmt.Println("And not false is", !false)
 	fmt.Println("While not true is", !true)
+
+	/*
+		True and false in Go are untyped Boolean constants.
+
+		From https://blog.golang.org/constants
+
+		 An untyped constant is just a value, one not yet given a defined type that
+		 would force it to obey the strict rules that prevent combining differently
+		 typed values.
+	*/
 }
