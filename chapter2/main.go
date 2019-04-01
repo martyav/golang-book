@@ -1,15 +1,17 @@
 package main
 
 /*
-From https://golang.org/doc/code.html#PackageNames
+Text below from https://golang.org/doc/code.html#PackageNames
 
 The first statement in a Go source file must be
 
 `package <name>`
 
-where <name> is the package's default name for imports. (All files in a package must use the same name.)
+where <name> is the package's default name for imports. (All files in a package
+must use the same name.)
 
-Go's convention is that the package name is the last element of the import path: the package imported as "crypto/rot13" should be named `rot13`.
+Go's convention is that the package name is the last element of the
+import path: the package imported as "crypto/rot13" should be named `rot13`.
 
 Executable commands must always use `package main`.
 */
@@ -50,10 +52,12 @@ func main() {
 
 	fmt.Println("What is your name?")
 	text, _ := scanner.ReadString('\n')
+
 	/*
 		Multiple assignment on the same line
 		Implicit typing with := (only available within a function)
 		'\n' is the character to be used as a delimiter by the scanner
 	*/
+
 	fmt.Println("Hello, " + text)
 }
