@@ -13,3 +13,4 @@ Learning Go alongside [golang-book.com](https://www.golang-book.com)
   * Put functions in separate files.
   * Included example of exported function comment, and private function.
 * Started Chapter 5, with loops, conditionals and our friend Fizz Buzz.
+* Started Chapter 6, with rounding, arrays, maps, and slices
