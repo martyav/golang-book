@@ -14,3 +14,6 @@ Learning Go alongside [golang-book.com](https://www.golang-book.com)
   * Included example of exported function comment, and private function.
 * Started Chapter 5, with loops, conditionals and our friend Fizz Buzz.
 * Started Chapter 6, with rounding, arrays, maps, and slices
+
+## 3 April
+* Started Chapter 7, which covers functions 
