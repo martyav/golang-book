@@ -24,3 +24,4 @@ Learning Go alongside [golang-book.com](https://www.golang-book.com)
   * Recursion
   * `Panic`, `defer`, and `recover`
   * Problem sets completed
+* Started Chapter 8, which covers pointers.
