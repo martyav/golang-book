@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"math"
+)
 
 /*
 	Go allows functions to return multiple things
@@ -35,6 +38,8 @@ func panicAtTheRepo() {
 }
 
 func main() {
+	fmt.Println(fib(7))
+
 	length := variadic("one", "**", "3", "IV", "|||||")
 
 	fmt.Println("The length of all these items is", length)
@@ -87,4 +92,54 @@ func numerology(num int) int {
 	}
 
 	return numerology(num/10) + (num % 10)
+}
+
+// Problems
+
+func sum(args ...int) int {
+	total := 0
+
+	for _, value := range args {
+		total += value
+	}
+
+	return total
+}
+
+func half(num float64) (float64, bool) {
+	halved := num / 2.0
+
+	return math.Floor(halved), halved > 1 && math.Floor(halved) == halved
+}
+
+func findGreatest(args ...int) int {
+	greatest := 0
+
+	for _, value := range args { // Using len(args) with cause a type error
+		if value > greatest {
+			greatest = value
+		}
+	}
+
+	return greatest
+}
+
+func makeOddGenerator() func() uint {
+	initial := uint(1)
+
+	return func() (iterate uint) {
+		iterate = initial
+
+		initial += 2
+
+		return
+	}
+}
+
+func fib(num int) int {
+	if num < 2 {
+		return num
+	}
+
+	return fib(num-1) + fib(num-2)
 }

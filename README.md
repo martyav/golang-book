@@ -8,7 +8,7 @@ Learning Go alongside [golang-book.com](https://www.golang-book.com)
 * Started Chapter 4, which covers variables, scope, and a sneak peek at pointers.
 
 ## 2 April
-* Updated Chapter 4 
+* Updated Chapter 4
   * Included solutions to Celsius and Meters problems at end of chapter.
   * Put functions in separate files.
   * Included example of exported function comment, and private function.
@@ -16,4 +16,11 @@ Learning Go alongside [golang-book.com](https://www.golang-book.com)
 * Started Chapter 6, with rounding, arrays, maps, and slices
 
 ## 3 April
-* Started Chapter 7, which covers functions 
+* Started Chapter 7, which covers functions
+
+## 5 April
+* Updated Chapter 7
+  * Variadic functions
+  * Recursion
+  * `Panic`, `defer`, and `recover`
+  * Problem sets completed
