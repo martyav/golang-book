@@ -25,3 +25,6 @@ Learning Go alongside [golang-book.com](https://www.golang-book.com)
   * `Panic`, `defer`, and `recover`
   * Problem sets completed
 * Started Chapter 8, which covers pointers.
+
+## 6 April
+* Started Chapter 9: Structs, interfaces, methods, embedded types
