@@ -30,3 +30,6 @@ Learning Go alongside [golang-book.com](https://www.golang-book.com)
 * Started Chapter 9: Structs, interfaces, methods, embedded types
 * Started Chapter 10: Concurrency, goroutines, channels, select
 * Started Chapter 11: Packages (covered some of this material in ./chapter4)
+
+## 7 April
+* Started Chapter 12 -- note: this chapter does not have its own directory. Its contents are contained inside the test file for Chapter 11.
