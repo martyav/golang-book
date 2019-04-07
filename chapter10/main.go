@@ -26,6 +26,45 @@ func main() {
 		// of Goroutines.
 	}
 
+	c1 := make(chan string)    // Synchronous unbuffered channel
+	c2 := make(chan string, 2) // Asynch buffered channel
+
+	// From https://golang.org/pkg/builtin/#make
+	//
+	// The `make` built-in function allocates and initializes an object of type
+	// slice, map, or chan (only). Like `new`, the first argument is a type, not a
+	// value. Unlike `new`, `make's` return type is the same as the type of its
+	// argument, not a pointer to it.
+
+	go func() {
+		for {
+			c1 <- "from 1"
+			time.Sleep(time.Second * 2)
+		}
+	}()
+
+	go func() {
+		for {
+			c2 <- "from 2"
+			time.Sleep(time.Second * 3)
+		}
+	}()
+
+	// Go also has a `select` keyword that allows you to hop channels
+	// in an intelligent way. Channels are like named threads. See the
+	// functions outside of `main()` for more on channel syntax.
+
+	go func() {
+		for {
+			select {
+			case msg1 := <-c1:
+				fmt.Println(msg1)
+			case msg2 := <-c2:
+				fmt.Println(msg2)
+			}
+		}
+	}()
+
 	var input string
 	fmt.Scanln(&input)
 

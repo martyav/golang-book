@@ -28,4 +28,4 @@ Learning Go alongside [golang-book.com](https://www.golang-book.com)
 
 ## 6 April
 * Started Chapter 9: Structs, interfaces, methods, embedded types
-* Started Chapter 10: Concurrency, goroutines, channels
+* Started Chapter 10: Concurrency, goroutines, channels, select
